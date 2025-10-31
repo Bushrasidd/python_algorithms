@@ -1,12 +1,18 @@
-n = int(input("Enter the number of students: "))
+# This problem requires processing student data, stored as a nested list of 
+# [name, grade] pairs, to identify the second lowest unique grade achieved in the class.
 
+# The final output must list the names of all students who achieved this 
+# second lowest grade, ordered alphabetically, with each name on a new line.
+
+
+n = int(input())
 a = []
 
 for i in range(n):
-    name = input("Enter the name of student: ")
+    name = input()
     while True:
         try:
-            marks = int(input("Enter the marks of student: "))
+            marks = float(input())
             break
         except ValueError:
             print("invalid input")
@@ -14,19 +20,30 @@ for i in range(n):
     student_record = [name, marks]
     
     a.append(student_record)
-    print("list of student records is : ", a)
+   
     
 
 low = a[0][1]    
-for i in range(n-1):
+for i in range(len(a)):
     if a[i][1] <low:
         low = a[i][1]
     
 
-sec_low = a[0][1] 
-for j in range(n-1):
-    if a[j][1] < a[j+1][1] and a[j][1] != low:
-        sec_low = a[j][1]
+sec_low = None 
+for j in range(len(a)):
+    if a[j][1] != low:
+        if sec_low is None or a[j][1]< sec_low:
+             sec_low = a[j][1]
+            
+        
+lowest_record = []        
+for student_record in a:
+    if student_record[1] == sec_low:
+        lowest_record.append(student_record[0])
 
-print("The second lowest marks are: ", sec_low)
-print("the lowest marks are: ", low)
+
+lowest_record.sort()        
+        
+for name in lowest_record:
+    print(name)   
+
