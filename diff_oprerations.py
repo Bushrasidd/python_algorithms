@@ -1,3 +1,32 @@
+# Initialize a list (list = []).
+# You can perform the following commands on it as you read them from the input:
+# insert,print,remove,append,sort,pop,reverse
+# The program should first read an integer n (the number of commands), followed by n lines of commands. 
+# Iterate through each command in order and perform the corresponding operation on your list.
+
+# Example:
+
+# Input:
+# 12
+# insert 0 5
+# insert 1 10
+# insert 0 6
+# print
+# remove 6
+# append 9
+# append 1
+# sort
+# print
+# pop
+# reverse
+# print
+
+# Output:
+# [6, 5, 10]
+# [1, 5, 9, 10]
+# [9, 5, 1]
+
+
 if __name__ == '__main__':
     n = int(input()) 
     my_list = []
