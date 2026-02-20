@@ -36,4 +36,29 @@ for i in string:
 print(f)
 
 
+print("reversing a string without using slicing")
+
+# first take a string
+# loop till the end.
+# take the last element and print in reverse orders
+
+stringgggy = "HELLO WORLD"
+i = len(stringgggy)-1
+
+while i >= 0:
+    print(stringgggy[i], end="")
+    i -= 1
+
+
+# for i in range (len(string)-1, -1, -1):
+#     rev_str += string[i]
+
+# print(rev_str)
+
+
+
+
+
+
+
 
