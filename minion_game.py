@@ -1,3 +1,12 @@
+# HAckerRank - The Minion Game
+# The Minion Game is a word game involving two players, Stuart and Kevin. Both players
+# are given the same string, and they have to make substrings using the letters of the string.
+# Stuart has to make words starting with consonants, and Kevin has to make words starting with vowels. The game ends when both players have made all possible substrings. The player with the most substrings wins.
+# Scoring: Each occurrence of a substring adds 1 point to the player's score
+# solution: We can solve this problem by iterating through the string and counting the number of substrings that can be formed starting with each character. For each character, we can calculate the score based on whether 
+# it is a vowel or a consonant and keep track of the scores for both players. Finally, we can compare the scores and determine the winner.
+# Complexity Time: O(n) — We only loop through the string once.Space: O(1) — We only store two integer scores.
+
 def minion_game(string):
     vowels = "AEIOU"
     stuart_const_score = 0
