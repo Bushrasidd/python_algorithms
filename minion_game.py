@@ -29,3 +29,6 @@ def minion_game(string):
 if __name__ == '__main__':
     s = input()
     minion_game(s)
+
+
+    # (Select CITY from STATION ORDER BY LENGTH(CITY) ASC, CITY ASC LIMIT 1) UNION ALL(Select CITY from STATION ORDER BY LENGTH(CITY) DESC, CITY DESC LIMIT 1);
