@@ -19,3 +19,5 @@ obj2 = Animals("Cat","pet",2.4)
 print(obj2.name,obj2.category,obj2.height)
 
 obj3 = Animals()
+
+
