@@ -10,6 +10,7 @@ class Invoice:
 
 obj = Invoice("Karan", 30000, 500, "25-03-2025")
 print(obj.name,obj.amt,obj.date, obj.chr, Invoice.gst)
+
 t1 = obj.charges_cal(obj.amt, obj.chr)
 print("tax payable for Karan:", t1)
 obj2 = Invoice("Rahul", 80000, 400, "2-05-2025")
