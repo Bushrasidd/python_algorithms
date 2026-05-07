@@ -2,7 +2,7 @@
 # Conceptual Implimentation in Python
 
 class UserAccount:
-    name = "anonymous"
+    __name = "anonymous"
     def __init__(self, acc_num, acc_pass,name):
         self.name = name
         self.acc_num = acc_num
@@ -13,7 +13,7 @@ class UserAccount:
 
     def x(self):
         self.__change_password()
-
+   
 user = UserAccount("neha",12345678, "SCKAR00B")
 print(user.name,user.acc_num)
 # user.change_password() 
